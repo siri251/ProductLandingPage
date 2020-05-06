@@ -1,0 +1,233 @@
+
+<html>
+    <head>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+        <style>
+            body{
+            background: #f2f2f2;
+            font-family: Lato;
+            height: 100%;
+            margin: 0;
+            overflow-y:auto;
+            
+        }
+        #header{
+            display:flex;
+            justify-content:center;
+            background:white;
+            width:100%;
+            
+        }
+        #header-img{
+            display:flex;
+        }
+        #nav-bar a{
+            text-decoration:none;
+            color:black;
+            display:block;
+            padding:20px 20px 20px 20px;
+            font-size:1.2rem;
+        }
+        #nav-bar ul{
+            display:flex;
+            list-style:none;
+            padding:2px;
+        }
+        main{
+            display:grid;
+            height:100%;
+            margin:0;
+        }
+        #container{
+            position:relative;
+            overflow-y:auto; 
+            background:url('https://ak.picdn.net/shutterstock/videos/26050427/thumb/1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        @media(max-width: 600px) {
+           #nav-bar a:hover{
+               background-color:skyblue;
+               font-size: 1.4rem;
+             }
+             #nav-bar ul{
+             margin: 0px;
+             flex-direction: column;
+            }
+            #nav-bar li{
+              text-align: center;
+              border: 0.05rem solid black;
+            }
+            #nav-bar{
+              width: 100%;
+            }
+        }
+        #principal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        }
+       #form{
+            text-align: center;
+            padding: 5px;
+        }
+        
+        #highs li{
+            line-height:40px;
+            font-size:22px;
+        }
+        #email{
+            font-size:25px;
+        }
+        #submit{
+            border-radius:5px;
+            font-size:20px;
+            padding:5px;
+        }
+        input{
+            padding:5px;
+            margin:5px;
+            border-radius:5px;
+        }
+        #trending_product{
+            padding:15px;
+            justify-content: center;
+            display:flex;
+
+        }
+        #imgs td{
+            height:100px;
+            width:100px;
+        }
+        .box{
+            border:2px solid darkgray;
+            text-align:center;
+            padding:5px;
+            margin:5px;
+            border-radius:5px;
+        }
+        #products{
+            display:flex;
+            background:white;
+        }
+        #offers ul{
+            line-height:35px;
+        }
+        .box:hover{
+            transform:scale(1.03);
+        }
+        nav li:hover{
+            transform:scale(1.03);
+            background:rgb(62, 213, 240);
+        }
+        
+
+        </style>
+    </head>
+    <body>
+    <main>
+        
+        <header id="header">
+            
+        <img id="header-img" alt="logo" src="https://previews.123rf.com/images/distrologo/distrologo1902/distrologo190200712/117609654-phone-shop-logo-design-template-gadget-shop-logo-design.jpg" width="100px" height="100px"></div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#trending_product" class="nav-link">Trending product</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#Offers" class="nav-link">Offers</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div id="container">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label>enter the email</label><input id="email" type="email" name="email" placeholder="enter you email here"><br>
+            <input type="submit" id="submit" value="SUBMIT" name="email">
+       
+            </form>
+        
+        <h3>Our highlights..</h3>
+        <ol id="highs">
+        <li>We Accept as many payment options as possible.</li>
+        <li>We Provide easily accessible customer service.</li>
+        <li>We Offer free shipping.</li>
+        <li>Display high quality product images.</li>
+        </ol>
+        <section id="Offers">
+            <h3>Offers</h3>
+            <ul>
+            <li>Rs.1000 online discount + 10% SBI Off on orders above 10,990</li>
+            <li>10% SBI Discount on orders above 10,000</li>
+            <li> Up to 10% Bank Card Discount on orders above 8,000</li>
+            <li> Flat 10% Off on Min Order Of Rs. 5000 (Every Tuesday)</li>
+            <li> Upto Rs.1000 HDFC Discount, Sale Today, 12 Pm,on orders above 10,000</li>
+            </ul>
+            
+           
+    
+    
+    
+            </section>
+        <h3>The trending product:</h3>
+        <section id="trending_product">
+        <iframe id="video" width="500px" height="500px"  src="https://www.youtube.com/embed/cVEemOmHw9Y" allowfullscreen>
+        the new zen...
+        </iframe>
+       
+        </section>
+        <h3>our products</h3>
+        <section id="products">
+        <form class="box">
+        <h4>Xiaomi redmi Note 8</h4>
+        <img src="https://www.91-img.com/pictures/135480-v6-xiaomi-redmi-note-8-mobile-phone-medium-1.jpg?tr=q-60" height="200" width="150">
+        <p>Rs. 10,499</p>
+        <p>battery:4000mah</p>
+        <p>camera:48+2+2+2 mp quad primary cam</p>
+        <p>display:6.3 inches</p>
+        <p>4 GB RAM</p>  
+        <input type="submit" value="select" name="select">
+        </form>
+        <form class="box">
+        <h4>RealMe 5s</h4>
+        <img src="https://www.91-img.com/pictures/136305-v2-realme-5s-mobile-phone-medium-1.jpg?tr=q-60" height="200" width="150" alt="RealMe 5s photo">
+        <p>Rs. 10,999</p>
+        <p>battery:5000 mah</p>
+        <p>camera:48+2+2+2 mp quad primary cam</p>
+        <p>display:6.5 inches</p>
+        <p>4 GB RAM</p>
+        <input type="submit" value="select" name="select">
+        </form>
+        <form class="box">
+        <h4>Infinix S5 Pro</h4>
+        <img src="https://www.91-img.com/pictures/137402-v3-infinix-s5-pro-mobile-phone-medium-1.jpg?tr=q-60" height="200" width="150">
+        <p>Rs. 10,999</p>
+        <p>battery:4000mah</p>
+        <p>camera:48+2mp dual primary cam</p>
+        <p>display:6.53 inches</p>
+        <p>4 GB RAM</p>  
+        <input type="submit" value="select" name="select">
+        </form>
+        <form class="box">
+        <h4>Vivo U20</h4>
+        <img src="https://www.91-img.com/pictures/136566-v3-vivo-u20-mobile-phone-medium-1.jpg?tr=q-60" height="200" width="150">
+        <p>Rs. 10,990</p>
+        <p>battery:5000mah</p>
+        <p>camera:16MP + 8MP +2MP Triple Primary Cam</p>
+        <p>display:6.53 inches</p>
+        <p>4 GB RAM</p>  
+        <input type="submit" value="select" name="select">
+
+        </form>
+
+        </section>
+    
+    </div>
+
+
+    </main>
+
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
